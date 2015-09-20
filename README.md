@@ -71,7 +71,7 @@ The contents of the ```<head></head>``` tag are the title, skin and other elemen
     </b:skin>
 ```
 
-There are additional CSS files that are loaded by Blogger before ```<b:skin>```. If you want to disable that:
+    There are additional CSS files that are loaded by Blogger before ```<b:skin>```. If you want to disable that:
 
 ```http://subinsb.com/disable-blogger-official-css-loading```
 
@@ -83,11 +83,11 @@ Blogger needs a ```<b:section>``` element in template. So, we should add it insi
     <b:section id='main' showaddelement='yes'/>
 ```
 
-This section is the main section of the blog where we can add gadgets to it.
+    This section is the main section of the blog where we can add gadgets to it.
 
 ###The Whole Code
 
-And the whole Template code would be:
+    And the whole Template code would be:
 
 ```
     <?xml version="1.0" encoding="UTF-8" ?>
