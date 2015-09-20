@@ -117,8 +117,8 @@ If you want to display the Posts, add the following code inside <b:section></b:s
 
 ####Example
 
-<b:section class='main' id='main' showaddelement='yes'>
-  <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
-</b:section>
+    <b:section class='main' id='main' showaddelement='yes'>
+      <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
+    </b:section>
 
 ####Save Your template
