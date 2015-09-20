@@ -50,6 +50,10 @@ The contents of the ```<head></head>``` tag are the title, skin and other elemen
 
 ####Add the title :
 
+```<title><data:blog.pageTitle/></title>```
+
+####Add the Skin with basic CSS that can be changed using Blogger's Template Designer :
+
 ```
     <b:skin>
      <![CDATA[/* 
@@ -66,6 +70,8 @@ The contents of the ```<head></head>``` tag are the title, skin and other elemen
 ```
 
 There are additional CSS files that are loaded by Blogger before <b:skin>. If you want to disable that
+
+```http://subinsb.com/disable-blogger-official-css-loading```
 
 ###Body
 
