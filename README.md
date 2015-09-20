@@ -73,7 +73,7 @@ This section is the main section of the blog where we can add gadgets to it.
 
 And the whole Template code would be :
 
-<?xml version="1.0" encoding="UTF-8" ?>
+```<?xml version="1.0" encoding="UTF-8" ?>
 <html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
  <head>
   <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/> 
@@ -102,16 +102,16 @@ And the whole Template code would be :
   <!-- Please Keep The Credits -->
   <center><a href="http://subinsb.com/make-a-blank-blogger-template">Blank Template By subinsb.com</a></center>
  </body>
-</html>
+</html>```
 
 ####Additional Code adding
 
-* Add additional CSS codes inside ```html <b:skin></b:skin></kbd> ```
-* Add JavaScript codes before </head> or after <head>
-* Add HTML codes (widgets, code) inside <body>.
+* Add additional CSS codes inside ```<b:skin></b:skin>```
+* Add JavaScript codes before ```</head>``` or after ```<head>```
+* Add HTML codes (widgets, code) inside ```<body>```.
 * You can do all the stuff in this template just like you do it a HTML page.
 
-If you want to display the Posts, add the following code inside <b:section></b:section> in body :
+If you want to display the Posts, add the following code inside ```<b:section></b:section>``` in body :
 
 <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
 
