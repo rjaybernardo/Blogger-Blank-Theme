@@ -38,13 +38,15 @@ We will now add the Basic HTML page to the Template :
 
 The contents of the ```<head></head>``` tag are the title, skin and other elements. We should add the normal codes that are seen on Blogger Templates first :
 
-```<meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/> 
- <b:if cond='data:blog.isMobile'> 
-  <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/> 
- <b:else/> 
-  <meta content='width=1100' name='viewport'/> 
- </b:if> 
-<b:include data='blog' name='all-head-content'/>```
+```
+    <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/> 
+     <b:if cond='data:blog.isMobile'> 
+      <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/> 
+     <b:else/> 
+      <meta content='width=1100' name='viewport'/> 
+     </b:if> 
+    <b:include data='blog' name='all-head-content'/>
+```
 
 ####Add the title :
 
