@@ -1,6 +1,6 @@
 ####There are certain criteria for making a template for Blogger Blog :
 
-1. There must be skin (<b:skin></b:skin>) in the template
+1. There must be skin (```<b:skin></b:skin>```) in the template
 2. A template must have at least one b:section tag
 3. Every section should have a unique id.
 4. Correct Syntax
@@ -13,8 +13,8 @@ As we said before, Blogger Templates should meet the criterias of Blogger. A Bla
 
 
 1. Basic HTML Page Tags (html, head, body) and their closings
-2. Only one <b:skin></b:skin> tag
-3. Need At least a <b:section></b:section> tag.
+2. Only one ```<b:skin></b:skin>``` tag
+3. Need At least a ```<b:section></b:section>``` tag.
 
 ###Create Template
 
@@ -24,25 +24,25 @@ Go to your **Blogger Blog -> Template** and click on **Edit HTML** button. Remov
 
 We will now add the Basic HTML page to the Template :
 
-<?xml version="1.0" encoding="UTF-8" ?>
+```<?xml version="1.0" encoding="UTF-8" ?>
 <html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
  <head>
  </head>
  <body>
  </body>
-</html>
+</html>```
 
 ##HEAD
 
-The contents of the <head></head> tag are the title, skin and other elements. We should add the normal codes that are seen on Blogger Templates first :
+The contents of the ```<head></head>``` tag are the title, skin and other elements. We should add the normal codes that are seen on Blogger Templates first :
 
-<meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/> 
+```<meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/> 
  <b:if cond='data:blog.isMobile'> 
   <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/> 
  <b:else/> 
   <meta content='width=1100' name='viewport'/> 
  </b:if> 
-<b:include data='blog' name='all-head-content'/>
+<b:include data='blog' name='all-head-content'/>```
 
 ####Add the title :
 
