@@ -5,7 +5,7 @@
 3. Every section should have a unique id.
 4. Correct Syntax
 
-#####If the above criterias are met, Blogger won't produce any errors when saving the template. For creating a blank HTML Template, we will make sure these criterias are met.
+*If the above criterias are met, Blogger won't produce any errors when saving the template. For creating a blank HTML Template, we will make sure these criterias are met.*
 
 ###Contents Of Blogger Blank Template
 
