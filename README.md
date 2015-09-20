@@ -50,18 +50,20 @@ The contents of the ```<head></head>``` tag are the title, skin and other elemen
 
 ####Add the title :
 
-<b:skin>
- <![CDATA[/* 
-  body { 
-   font: $(body.font); 
-   color: $(body.text.color); 
-   background: $(body.background); 
-   padding: 0 $(content.shadow.spread) $(content.shadow.spread) $(content.shadow.spread); 
-   $(body.background.override) margin: 0; 
-   padding: 0; 
-  }
- ]]>
-</b:skin>
+```
+    <b:skin>
+     <![CDATA[/* 
+      body { 
+       font: $(body.font); 
+       color: $(body.text.color); 
+       background: $(body.background); 
+       padding: 0 $(content.shadow.spread) $(content.shadow.spread) $(content.shadow.spread); 
+       $(body.background.override) margin: 0; 
+       padding: 0; 
+      }
+     ]]>
+    </b:skin>
+```
 
 There are additional CSS files that are loaded by Blogger before <b:skin>. If you want to disable that
 
