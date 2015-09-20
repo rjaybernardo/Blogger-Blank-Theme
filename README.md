@@ -71,9 +71,9 @@ The contents of the ```<head></head>``` tag are the title, skin and other elemen
     </b:skin>
 ```
 
-    There are additional CSS files that are loaded by Blogger before ```<b:skin>```. If you want to disable that:
+There are additional CSS files that are loaded by Blogger before ```<b:skin>```. If you want to disable that:
 
-```http://subinsb.com/disable-blogger-official-css-loading```
+    http://subinsb.com/disable-blogger-official-css-loading
 
 ###Body
 
