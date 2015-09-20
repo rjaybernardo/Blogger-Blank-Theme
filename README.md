@@ -77,7 +77,7 @@ There are additional CSS files that are loaded by Blogger before ```<b:skin>```.
 
 ###Body
 
-Blogger needs a ``<b:section>`` element in template. So, we should add it inside body.
+Blogger needs a ```<b:section>``` element in template. So, we should add it inside body.
 
 ```
     <b:section id='main' showaddelement='yes'/>
