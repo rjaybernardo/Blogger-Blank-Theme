@@ -141,3 +141,59 @@ If you want to display the Posts, add the following code inside ```<b:section></
     </b:section>
 
 ######Save Your template
+
+#Disable Blogger Official CSS From Loading In Template
+
+Blogger adds their CSS styles to every templates. These files' load time will make your site slow. So for a better user experience, Blogger CSS files should be removed. But there isn't any Settings page for this. Blogger automatically add it's style sheets. But you can disable the loading with a simple hack.
+
+####Blogger Style Sheets
+
+The Blogger CSS files are these :
+
+```
+    https://www.blogger.com/static/v1/widgets/4219271310-widget_css_2_bundle.css
+    https://www.blogger.com/static/v1/widgets/1937454905-widget_css_bundle.css
+    https://www.blogger.com/static/v1/widgets/3160349130-widget_css_2_bundle.css
+```
+
+When Blogger updates, the above URL's will also change. Thus page load increases.
+
+#####Warning
+
+The Blogger CSS files contain the styles of Blogger Native Widgets. If you are using a Blogger Made Template and disable the Style Sheet loading, your site will look ugly. Use this hack only if your blog is using a custom template.
+
+#####How ?
+
+The CSS loading ```"<link>"``` tags will appear on the source code of your blog, but won't be loaded by browsers, because it is wrapped in HTML Comment tag. Browsers ignore the HTML markup inside the comments. So, the Blogger CSS files won't be loaded.
+
+#####Disable Loading In Template
+
+Go to your **Blogger Blog -> Template -> Edit HTML**
+
+Search for ```"<b:skin>"``` in the Template Code using your browser Find Tool (CTRL + F). Move the contents of the ```"<b:skin>" to "</b:skin>"``` element to a file. Now, replace the``` "<b:skin></b:skin>"``` code with the following :
+
+```
+    &lt;style&gt;&lt;!--/*<b:skin><![CDATA[*/]]></b:skin>
+```
+
+After replacing search for the "</head>" element. Before it add the following code :
+
+```
+    <style></style>
+```
+
+Copy the code that we moved to a file and paste it after ```"<style>" ```in the above code.
+
+Save the Template.
+
+#####Did It Work ?
+
+Now, we should check if it worked on your blog. So, go to your blog address, right click on an empty space and choose the "View Page Source" option from the right click context menu Or use the CTRL + U keyboard shortcut.
+
+Search for the following code :
+
+```
+    <style><!---/*
+```
+
+If you found the code above and it is highlighted in black/gray color, then you have successfully disabled the Blogger CSS loading.
