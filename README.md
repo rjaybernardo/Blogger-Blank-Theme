@@ -83,11 +83,11 @@ Blogger needs a ```<b:section>``` element in template. So, we should add it insi
     <b:section id='main' showaddelement='yes'/>
 ```
 
-    This section is the main section of the blog where we can add gadgets to it.
+This section is the main section of the blog where we can add gadgets to it.
 
 ###The Whole Code
 
-    And the whole Template code would be:
+And the whole Template code would be:
 
 ```
     <?xml version="1.0" encoding="UTF-8" ?>
