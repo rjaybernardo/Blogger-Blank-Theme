@@ -106,10 +106,7 @@ And the whole Template code would be :
 
 ####Additional Code adding
 
-* Add additional CSS codes inside 
-
-    <b:skin></b:skin>
-
+* Add additional CSS codes inside <kbd><b:skin></b:skin></kbd>
 * Add JavaScript codes before </head> or after <head>
 * Add HTML codes (widgets, code) inside <body>.
 * You can do all the stuff in this template just like you do it a HTML page.
