@@ -71,7 +71,7 @@ There are additional CSS files that are loaded by Blogger before <b:skin>. If yo
 
 Blogger needs a <b:section> element in template. So, we should add it inside body.
 
-<b:section id='main' showaddelement='yes'/>
+```<b:section id='main' showaddelement='yes'/>```
 
 This section is the main section of the blog where we can add gadgets to it.
 
@@ -79,38 +79,39 @@ This section is the main section of the blog where we can add gadgets to it.
 
 And the whole Template code would be :
 
-```<pre> <?xml version="1.0" encoding="UTF-8" ?>
-    <html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-     <head>
-      <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/> 
-      <b:if cond='data:blog.isMobile'> 
-       <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/> 
-      <b:else/> 
-       <meta content='width=1100' name='viewport'/> 
-      </b:if> 
-      <b:include data='blog' name='all-head-content'/>
-      <title><data:blog.pageTitle/></title>
-      <b:skin>
-       <![CDATA[/* 
-        body { 
-         font: $(body.font); 
-         color: $(body.text.color); 
-         background: $(body.background); 
-         padding: 0 $(content.shadow.spread) $(content.shadow.spread) $(content.shadow.spread); 
-         $(body.background.override) margin: 0; 
-         padding: 0; 
-        }
-       ]]>
-      </b:skin>
-     </head>
-     <body>
-      <b:section class='main' id='main' showaddelement='yes'/>
-    <!-- Please Keep The Credits -->
-      <center><a href="http://subinsb.com/make-a-blank-blogger-template">Blank Template By subinsb.com</a></center>
-    </body>
-    </data:blog.pageTitle>
-    </html>
-    </pre>```
+```
+    <?xml version="1.0" encoding="UTF-8" ?>
+        <html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+         <head>
+          <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/> 
+          <b:if cond='data:blog.isMobile'> 
+           <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/> 
+          <b:else/> 
+           <meta content='width=1100' name='viewport'/> 
+          </b:if> 
+          <b:include data='blog' name='all-head-content'/>
+          <title><data:blog.pageTitle/></title>
+          <b:skin>
+           <![CDATA[/* 
+            body { 
+             font: $(body.font); 
+             color: $(body.text.color); 
+             background: $(body.background); 
+             padding: 0 $(content.shadow.spread) $(content.shadow.spread) $(content.shadow.spread); 
+             $(body.background.override) margin: 0; 
+             padding: 0; 
+            }
+           ]]>
+          </b:skin>
+         </head>
+         <body>
+          <b:section class='main' id='main' showaddelement='yes'/>
+        <!-- Please Keep The Credits -->
+          <center><a href="http://subinsb.com/make-a-blank-blogger-template">Blank Template By subinsb.com</a></center>
+        </body>
+        </data:blog.pageTitle>
+        </html>
+```
 
 ####Additional Code adding
 
