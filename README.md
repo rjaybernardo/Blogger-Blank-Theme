@@ -24,13 +24,15 @@ Go to your **Blogger Blog -> Template** and click on **Edit HTML** button. Remov
 
 We will now add the Basic HTML page to the Template :
 
-```<?xml version="1.0" encoding="UTF-8" ?>
-<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
- <head>
- </head>
- <body>
- </body>
-</html>```
+```
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+     <head>
+     </head>
+     <body>
+     </body>
+    </html>
+```
 
 ##HEAD
 
